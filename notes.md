@@ -1,4 +1,9 @@
-from django.db import models
+* ORM : use same implimentaion for diff. SQL lang. for multiple data base.
+
+* each db table consider as a model
+* the model write in (app folder -> models.py )
+
+______________________
 from django.contrib.auth import get_user_model
 
 # Create your models here.
@@ -40,5 +45,19 @@ class Snack(models.Model):
         # to see the name of object
         return self.name
 
-     
+______________________
 
+------> go to admin.py file in app folder and regester the model
+
+from .models import Snack
+
+# Register your models here.
+
+admin.site.register(Snack)
+
+---------------------
+
+------> make template to show the table to the user
+
+1. make path in urls.py inside app folder (snackes)
+2. make class for the path in view.py inside app folder (snackes)
