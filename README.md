@@ -20,3 +20,4 @@ https://github.com/Noor696/snack_tracker_project
 > python3 manage.py test
 
 **Pull Request**
+https://github.com/Noor696/snack_tracker_project/pull/2
