@@ -1,2 +1,2 @@
-let x= prompt("anything")
-alert("welcome")
+// let x= prompt("anything")
+// alert("welcome")

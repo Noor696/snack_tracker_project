@@ -18,7 +18,7 @@ class Snack(models.Model):
     # help_text="" --> this optional
     # the purchaser should be the forign key from the user table
 
-    name = models.CharField(max_length=255,help_text="the name of snack")
+    name = models.CharField(max_length=64,help_text="the name of snack")
     rank = models.IntegerField()
     description = models.TextField(default="description")
     purchaser = models.ForeignKey(get_user_model() , on_delete=models.CASCADE)  # CASCADE means if I delete any user it will delete any data refer to this user from another table

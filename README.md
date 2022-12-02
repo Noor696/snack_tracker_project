@@ -21,3 +21,10 @@ https://github.com/Noor696/snack_tracker_project
 
 **Pull Request**
 https://github.com/Noor696/snack_tracker_project/pull/2
+
+
+**create a super user**:
+python manage.py createsuperuser
+
+**update the database:**
+python manage.py migrate

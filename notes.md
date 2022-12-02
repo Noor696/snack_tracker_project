@@ -61,3 +61,10 @@ admin.site.register(Snack)
 
 1. make path in urls.py inside app folder (snackes)
 2. make class for the path in view.py inside app folder (snackes)
+
+_____________________
+
+we can make the data base design by using site: and it is the **first step** in backend to determine the kind of the data we have it inside the application. 
+specify: the name of tables, the releations between tables, specify the primary key, forign key, ...
+
+**app.sqldbm.com**
