@@ -22,6 +22,7 @@ https://github.com/Noor696/snack_tracker_project
 **Pull Request**
 https://github.com/Noor696/snack_tracker_project/pull/2
 https://github.com/Noor696/snack_tracker_project/pull/3
+https://github.com/Noor696/snack_tracker_project/pull/4
 
 **create a super user**:
 python manage.py createsuperuser
