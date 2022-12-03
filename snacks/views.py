@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from django.views.generic import TemplateView,ListView
+from django.views.generic import TemplateView,ListView, DetailView
 from .models import Snack
 
 # Create your views here.
@@ -12,7 +12,10 @@ class SnackListView(ListView):
     # give it the model we want to show
     model = Snack # the table we want take the data from. 
 
-class SnackDetailView(ListView): 
+    # if we want change name of {object list}
+    context_object_name = "AllSnacks"
+
+class SnackDetailView(DetailView): 
     template_name='snack_detail.html'
     # give it the model we want to show
     model = Snack # the table we want take the data from. 

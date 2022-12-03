@@ -27,4 +27,5 @@ https://github.com/Noor696/snack_tracker_project/pull/3
 python manage.py createsuperuser
 
 **update the database:**
+python manage.py makemigrations
 python manage.py migrate
