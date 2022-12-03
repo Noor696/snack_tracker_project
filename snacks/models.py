@@ -19,7 +19,8 @@ class Snack(models.Model):
     # the purchaser should be the forign key from the user table
 
     name = models.CharField(max_length=64,help_text="the name of snack")
-    rank = models.IntegerField()
+    img_url = models.TextField(default="no image provided")
+    amount = models.IntegerField()
     description = models.TextField(default="description")
     purchaser = models.ForeignKey(get_user_model() , on_delete=models.CASCADE)  # CASCADE means if I delete any user it will delete any data refer to this user from another table
 
@@ -37,7 +38,7 @@ class Snack(models.Model):
     # `python manage.py makemigrations` --> `python manage.py migrate`
 
     def __str__(self):
-        # to see the name of object
+        # to see the name of object(snack)
         return self.name
 
      

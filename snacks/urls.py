@@ -4,5 +4,8 @@ from .views import HomePage,SnackListView, SnackDetailView  # 2. import from you
 urlpatterns = [
     path('', HomePage.as_view(), name="home"),
     path('snacks', SnackListView.as_view(),name="snacks"),
-    path('snacksdetail', SnackDetailView.as_view(),name="snacksdetail")
+    path('snacks/<pk>', SnackDetailView.as_view(),name="snacksdetail")
 ]
+
+# snacks/<pk> : this dunamic path refer uniqe type of snackes 
+# snacks/1 , snacks/2 , snacks/...
